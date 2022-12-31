@@ -25,7 +25,7 @@ type authProviderProps = {
 };
 
 export const AuthProvider = ({ children }: authProviderProps) => {
-  const [user, setUser] = useState<boolean>(null);
+  const [user, setUser] = useState<boolean>(false);
   const login = () => {
     setUser(true);
   };
