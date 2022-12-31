@@ -36,7 +36,3 @@ export const AuthProvider = ({ children }: authProviderProps) => {
 
   return <AuthContext.Provider value={(user, login, logout)}>{children}</AuthContext.Provider>;
 };
-
-type authProviderProps = {
-  children: ReactNode;
-};
